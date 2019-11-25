@@ -1,0 +1,21 @@
+<template>
+  <text id="{{id}}" style="{{style}}" class="{{className}}" onclick={{onClick}}>
+    <slot></slot>
+  </text>
+</template>
+<script>
+  export default {
+    props: ['id', 'style', 'className', 'numberOfLines', 'onClick'],
+    data() {
+      let _style = this.style || {};
+      if (this.numberOfLines) {
+        _style = Object.assign({}, _style, {
+          lines: this.numberOfLines
+        });
+      }
+      return {
+        style: _style,
+      }
+    },
+  };
+</script>

@@ -1,7 +1,7 @@
 {
-  "name": "rax-text",
-  "version": "1.1.2",
-  "description": "Text component for Rax.",
+  "name": "@ali/motor-rax-text",
+  "version": "1.0.0",
+  "description": "Text component for Motor Rax.",
   "license": "BSD-3-Clause",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -12,6 +12,9 @@
     "prepublishOnly": "npm run build",
     "test": "npm run build && rax-scripts test",
     "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx ./src"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
   "repository": {
     "type": "git",
