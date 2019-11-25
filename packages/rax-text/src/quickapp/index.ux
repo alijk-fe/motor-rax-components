@@ -1,11 +1,11 @@
 <template>
-  <text id="{{id}}" style="{{style}}" class="{{className}}" onclick={{onclick}}>
+  <text id="{{id}}" style="{{style}}" class="{{className}}">
     <slot></slot>
   </text>
 </template>
 <script>
   export default {
-    props: ['name', 'mrId', 'mrStyle', 'mrClassName', 'mrNumberOfLines', 'mrOnClick'],
+    props: ['name', 'mrId', 'mrStyle', 'mrClassName', 'mrNumberOfLines'],
     data() {
       console.log(this)
       let _style = this.mrStyle || {};
@@ -22,7 +22,6 @@
         id: this.mrId,
         style: _style,
         className: this.mrClassName,
-        onclick: this.mrOnClick
       }
     },
   };

@@ -1,6 +1,6 @@
 {
   "name": "@ali/motor-rax-text",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Text component for Motor Rax.",
   "license": "BSD-3-Clause",
   "main": "lib/index.js",
