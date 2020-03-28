@@ -1,6 +1,7 @@
 import fmtEvent from './fmtEvent';
 
 declare const tt: any;
+const noop = () => {};
 /**
  * miniappHref value：navigate:abc?a=1 redirect:abc?a=1 switchTab:a/b/c navigateBack:2
  * mpHref for  backward compatibility
@@ -25,6 +26,7 @@ Component({
       type: String,
       value: ''
     },
+    onPress: noop
   },
   options: {
     styleIsolation: 'apply-shared',

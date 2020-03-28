@@ -1,5 +1,5 @@
 {
-  "name": "rax-modal",
+  "name": "@ali/tt-rax-modal",
   "version": "1.2.4",
   "description": "rax-modal",
   "main": "lib/index.js",
@@ -23,6 +23,9 @@
     "moduleNameMapper": {
       "\\.(css|less|scss|sass)$": "jest-transform-css"
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
   },
   "engines": {
     "npm": ">=3.0.0"
@@ -55,6 +58,7 @@
   },
   "miniappConfig": {
     "main": "lib/miniapp/index",
-    "main:wechat": "lib/miniapp-wechat/index"
+    "main:wechat": "lib/miniapp-wechat/index",
+    "main:bytedance": "lib/miniapp-wechat/index"
   }
 }
