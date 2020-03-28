@@ -1,5 +1,5 @@
 {
-  "name": "rax-link",
+  "name": "@ali/tt-rax-link",
   "version": "1.2.0",
   "description": "Link component for Rax.",
   "license": "BSD-3-Clause",
@@ -35,7 +35,11 @@
   "miniappConfig": {
     "main": "lib/miniapp/index",
     "main:wechat": "lib/miniapp-wechat/index",
-    "main:quickapp": "lib/quickapp/index"
+    "main:quickapp": "lib/quickapp/index",
+    "main:bytedance": "lib/miniapp-bytedance/index"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
   },
   "quickappConfig": {
     "main": "lib/quickapp/index"
