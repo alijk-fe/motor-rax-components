@@ -1,13 +1,14 @@
 {
-  "name": "rax-canvas",
+  "name": "@ali/tt-rax-canvas",
   "author": "rax",
-  "version": "2.1.0",
+  "version": "1.0.0",
   "description": "Canvas for Rax.",
   "main": "lib/index.js",
   "module": "src/index.js",
   "miniappConfig": {
     "main": "lib/miniapp/index",
-    "main:wechat": "lib/wechat-miniprogram/index"
+    "main:wechat": "lib/wechat-miniprogram/index",
+    "main:bytedance": "lib/bytedance-microdance/index"
   },
   "files": [
     "dist",
@@ -25,6 +26,9 @@
   },
   "peerDependencies": {
     "rax": "^1.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
   },
   "scripts": {
     "start": "build-scripts start",
