@@ -10,8 +10,7 @@
     "build": "npm run clean && rax-scripts build",
     "start": "rax-scripts start",
     "prepublishOnly": "npm run build",
-    "test": "npm run build && rax-scripts test",
-    "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx ./src"
+    "test": "npm run build && rax-scripts test"
   },
   "files": [
     "dist",
@@ -37,7 +36,7 @@
     "registry": "https://registry.npm.alibaba-inc.com"
   },
   "dependencies": {
-    "universal-env": "^1.0.0"
+    "universal-env": "^3.0.0"
   },
   "peerDependencies": {
     "rax": "^1.0.0"
@@ -62,6 +61,10 @@
   "miniappConfig": {
     "main": "lib/miniapp/index",
     "main:wechat": "lib/miniapp-wechat/index",
-    "main:bytedance": "lib/miniapp-wechat/index"
+    "main:bytedance": "lib/miniapp-wechat/index",
+    "main:quickapp": "lib/quickapp/index"
+  },
+  "quickappConfig": {
+    "main": "lib/quickapp/index"
   }
 }
