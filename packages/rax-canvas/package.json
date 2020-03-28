@@ -1,7 +1,7 @@
 {
   "name": "@ali/tt-rax-canvas",
   "author": "rax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Canvas for Rax.",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -32,7 +32,9 @@
   },
   "scripts": {
     "start": "build-scripts start",
-    "build": "build-scripts build"
+    "build": "npm run clean && rax-scripts build",
+    "start": "rax-scripts start",
+    "prepublishOnly": "npm run build",
   },
   "bugs": {
     "url": "https://github.com/raxjs/rax-components/issues"
@@ -49,6 +51,7 @@
     "driver-universal": "^3.1.0",
     "csstype": "^2.6.4",
     "eslint": "^5.16.0",
+    "rax-scripts": "^2.0.0",
     "eslint-config-rax": "^0.0.3",
     "rax": "^1.1.0",
     "rax-test-renderer": "^1.0.0"
