@@ -1,6 +1,6 @@
 {
-  "name": "rax-recyclerview",
-  "version": "1.1.3",
+  "name": "@ali/tt-rax-recyclerview",
+  "version": "1.0.0",
   "description": "RecyclerView component for Rax.",
   "license": "BSD-3-Clause",
   "main": "lib/index.js",
@@ -27,6 +27,7 @@
   "miniappConfig": {
     "main": "lib/miniapp/index",
     "main:wechat": "lib/miniapp-wechat/index",
+    "main:bytedance": "lib/miniapp-bytedance/index",
     "subComponents": {
       "Header": {
         "tagNameMap": "view",
@@ -47,6 +48,9 @@
   },
   "bugs": {
     "url": "https://github.com/alibaba/rax/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
   },
   "homepage": "https://github.com/alibaba/rax#readme",
   "engines": {
