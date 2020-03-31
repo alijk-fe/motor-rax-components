@@ -61,7 +61,7 @@
     "rax-find-dom-node": "^1.0.0",
     "prop-types": "^15.7.2",
     "rax-refreshcontrol": "^1.0.0",
-    "rax-scrollview": "^1.0.4",
+    "@ali/tt-rax-scrollview": "^1.0.1",
     "rax-view": "^1.0.2",
     "universal-env": "^3.0.0"
   },
