@@ -1,7 +1,7 @@
 {
   "name": "@ali/tt-rax-canvas",
   "author": "rax",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Canvas for Rax.",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -33,6 +33,9 @@
   },
   "bugs": {
     "url": "https://github.com/raxjs/rax-components/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
   },
   "homepage": "https://github.com/raxjs/rax-components#readme",
   "dependencies": {
